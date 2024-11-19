@@ -1,0 +1,5 @@
+requests~=2.32.3
+modelscope~=1.20.1
+gradio~=5.3.0
+numpy~=2.1.2
+scikit-learn~=1.5.2

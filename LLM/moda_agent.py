@@ -5,7 +5,7 @@ import warnings
 import torch
 from modelscope import AutoModelForCausalLM, AutoTokenizer
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-
+print(device)
 
 warnings.filterwarnings('ignore')
 import sys
@@ -13,7 +13,7 @@ sys.path.append('../')
 
 class ModaAgent:
     def __init__(self):
-        self.model_name = "qwen/Qwen2.5-3B-Instruct"
+        self.model_name = "qwen/Qwen2.5-7B-Instruct"
 
         self.model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
